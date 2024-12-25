@@ -24,9 +24,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
-        android:text="Original"
+        android:text="720 land"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="36sp"
         android:textStyle="normal"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
@@ -41,14 +41,14 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/white_background"
         android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/ver95"
-        app:layout_constraintStart_toStartOf="@+id/ver_5"
+        app:layout_constraintEnd_toStartOf="@+id/ver75"
+        app:layout_constraintStart_toStartOf="@+id/ver25"
         app:layout_constraintTop_toBottomOf="@+id/posTitle">
 
         <EditText
             android:id="@+id/name"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="75dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
@@ -64,7 +64,7 @@
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="75dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8sp"
             android:layout_marginEnd="16dp"
@@ -80,7 +80,7 @@
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="75dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8sp"
             android:layout_marginEnd="16dp"
@@ -96,7 +96,7 @@
         <EditText
             android:id="@+id/re_password"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="75dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8sp"
             android:layout_marginEnd="16dp"
@@ -111,7 +111,7 @@
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="75dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
@@ -126,8 +126,7 @@
         android:layout_height="wrap_content"
         android:text="Forgot Password?"
         android:textColor="@color/black"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
@@ -167,6 +166,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.35" />
+        app:layout_constraintGuide_percent="0.45" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

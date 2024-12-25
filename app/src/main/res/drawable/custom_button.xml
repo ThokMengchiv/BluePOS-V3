@@ -3,6 +3,5 @@
     xmlns:corners="http://schemas.android.com/aapt">
     <corners android:radius = "50dp"/>
         <gradient android:startColor="#028C80"
-         android:angle="360"
-            android:endColor="#B1DE7F"/>
+         android:angle="360" android:endColor="#B1DE7F"/>
 </shape>

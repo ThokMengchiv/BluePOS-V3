@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "442703053721",
+    "project_id": "bluepos-a789e",
+    "storage_bucket": "bluepos-a789e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442703053721:android:cea637a9cd445792be0908",
+        "android_client_info": {
+          "package_name": "com.bluepos.bluepos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy_TBdlA2h4npOPSj3SyUmaUdoEHLkg1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

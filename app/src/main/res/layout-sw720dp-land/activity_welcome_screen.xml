@@ -28,7 +28,7 @@
         android:fontFamily="sans-serif-light"
         android:text="@string/pos_title"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="36sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.494"
@@ -38,10 +38,11 @@
     <RelativeLayout
         android:id="@+id/signinBtn"
         android:layout_width="0dp"
-        android:layout_height="82dp"
+        android:layout_height="92dp"
         android:layout_marginStart="16dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/hor_50"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline2">
 
         <RelativeLayout
@@ -90,7 +91,7 @@
     <RelativeLayout
         android:id="@+id/registerBtn"
         android:layout_width="0dp"
-        android:layout_height="82dp"
+        android:layout_height="92dp"
 
         android:layout_weight="1"
         app:layout_constraintEnd_toEndOf="@+id/signinBtn"
@@ -153,6 +154,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.50" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hor_50"
         android:layout_width="wrap_content"

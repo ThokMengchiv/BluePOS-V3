@@ -5,83 +5,66 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".SignInActivity">
 
 
     <ImageView
         android:id="@+id/logoImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_margin="16dp"
         android:src="@drawable/logo"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toStartOf="@+id/ver25"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/ver_5"
-        app:layout_constraintTop_toTopOf="@+id/hor_35" />
+        app:layout_constraintBottom_toTopOf="@+id/posTitle"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     <TextView
         android:id="@+id/posTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-light"
-        android:text="600dp land"
+        android:text="Teblet 600 dp "
         android:textColor="@color/black"
-        android:textSize="36sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toTopOf="@+id/hor_35"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_margin="16dp"
         android:background="@drawable/white_background"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/hor_95"
-        app:layout_constraintEnd_toStartOf="@+id/ver95"
-        app:layout_constraintStart_toStartOf="@+id/ver25"
-        app:layout_constraintTop_toTopOf="@+id/hor_35">
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline7">
 
         <EditText
-            android:id="@+id/name"
+            android:id="@+id/email"
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="65dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/edit_text_white"
             android:ems="10"
-            android:hint="Name"
+            android:hint="Email"
             android:inputType="textPersonName"
             android:paddingStart="16dp"
             android:textColorHint="#3678FB"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="85dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8sp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/edit_text_white"
-            android:ems="10"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:paddingStart="16dp"
-            android:textColorHint="#3678FB"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="65dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8sp"
             android:layout_marginEnd="16dp"
@@ -92,82 +75,76 @@
             android:inputType="textPassword"
             android:paddingStart="16dp"
             android:textColorHint="#3678FB"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/re_password"
-            android:layout_width="match_parent"
-            android:layout_height="85dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8sp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/edit_text_white"
-            android:ems="10"
-            android:hint="Confirm Password"
-            android:inputType="textPassword"
-            android:paddingStart="16dp"
-            android:textColorHint="#3678FB"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <Button
+            android:id="@+id/signinBtn"
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="65dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/custom_button"
-            android:text="REGISTER"
-            android:textSize="24sp" />
+            android:text="SIGN IN"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:text="Forgot Password?"
         android:textColor="@color/black"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/hor_95"
-        app:layout_constraintEnd_toStartOf="@+id/ver25"
-        app:layout_constraintStart_toStartOf="@+id/ver_5"
-        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/ver_5"
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.05" />
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/ver95"
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.95" />
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/ver25"
+        android:id="@+id/guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.35" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/ver75"
+        android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.85" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/hor_95"
+        android:id="@+id/guideline8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.90" />
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/hor_35"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

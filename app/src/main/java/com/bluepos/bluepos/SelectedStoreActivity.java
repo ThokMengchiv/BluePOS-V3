@@ -29,7 +29,7 @@ public class SelectedStoreActivity extends AppCompatActivity {
         continueBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SelectedStoreActivity.this, PasscodeActivity.class);
+                Intent intent = new Intent(SelectedStoreActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

@@ -12,37 +12,38 @@
         android:id="@+id/logoImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:scaleType="centerCrop"
+        android:layout_marginTop="56dp"
         android:src="@drawable/logo"
-        android:layout_marginBottom="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/hor_50"
+        app:layout_constraintBottom_toTopOf="@+id/posTitle"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="@id/guideline2"
-        app:layout_constraintStart_toStartOf="@id/guideline1" />
+        app:layout_constraintEnd_toStartOf="@+id/ver_75"
+        app:layout_constraintStart_toStartOf="@+id/ver_25"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/posTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
-        android:text="@string/pos_title"
+        android:text="600dp port"
         android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/logoImage"
-        app:layout_constraintStart_toStartOf="@+id/logoImage"
-        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ver_75"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/ver_25"
+        app:layout_constraintTop_toBottomOf="@+id/hor_50" />
 
     <RelativeLayout
         android:id="@+id/signinBtn"
         android:layout_width="0dp"
         android:layout_height="82dp"
         android:layout_weight="1"
-        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="@id/ver_75"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/hor_50">
+        app:layout_constraintStart_toStartOf="@+id/ver_25"
+        app:layout_constraintTop_toBottomOf="@+id/posTitle">
 
         <RelativeLayout
             android:layout_width="200dp"
@@ -92,10 +93,12 @@
         android:layout_width="0dp"
         android:layout_height="82dp"
         android:layout_weight="1"
-        app:layout_constraintEnd_toEndOf="@id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
-
-        app:layout_constraintTop_toBottomOf="@+id/signinBtn">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/ver_75"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ver_25"
+        app:layout_constraintTop_toBottomOf="@+id/signinBtn"
+        app:layout_constraintVertical_bias="0.171">
 
         <RelativeLayout
             android:layout_width="200dp"
@@ -139,18 +142,21 @@
             </TextView>
         </RelativeLayout>
     </RelativeLayout>
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline1"
+        android:id="@+id/ver_25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.25" />
+        app:layout_constraintGuide_percent="0.15" />
+
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
+        android:id="@+id/ver_75"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.75" />
+        app:layout_constraintGuide_percent="0.85" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hor_50"
         android:layout_width="wrap_content"

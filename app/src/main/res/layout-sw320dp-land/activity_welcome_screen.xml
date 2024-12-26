@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
-        android:text="@string/pos_title"
+        android:text="320dp Land"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
